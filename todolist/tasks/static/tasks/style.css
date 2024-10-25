@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.tasks-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    margin-bottom: 10px;
+}

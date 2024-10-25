@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{% static 'tasks/style.css' %}">
+</head>
+<body>
+    <h1>Task List</h1>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <h2><strong>TITLE: </strong>{{ task.title }}</h2>
+            <p><strong>DESCRIPTION: </strong>{{ task.description }}</p>
+            <p><strong>GROUP: </strong>{{ task.groups }}</p>
+            <p><strong>DUE DATE: </strong>{{ task.due_date }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</html>
